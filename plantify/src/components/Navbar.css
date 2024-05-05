@@ -1,0 +1,9 @@
+@import url('https://fonts.cdnfonts.com/css/quella-2');
+
+.custom-grid {
+    grid-template-columns: 0.3fr 2fr 0.3fr;
+}
+
+.custom-font {
+    font-family: 'Quella', sans-serif;
+}
