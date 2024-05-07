@@ -1,25 +1,20 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons';
-import './Navbar.css';
 
 function Navbar() {
   return (
-
-    <nav data-testid="navbar" className="grid custom-grid pl-20 pr-20 pt-8 pb-4
-                                        content-center">
-        <div className='flex content-center text-4xl custom-font'>
-            <h2 className='m-0 p-0'>Plantify</h2>
-        </div>
-        <div className='flex justify-start gap-20 ml-20 content-center text-m'>
-            <a href="">Home</a>
-            <a href="">Products</a>
-            <a href="">About</a>
-        </div>
-        <div className='flex justify-between text-lg'>
-            <FontAwesomeIcon icon={faShoppingCart} data-testid="shopping-cart-icon" />
-            <FontAwesomeIcon icon={faUser} data-testid="profile" />
-        </div>
-    </nav>
+    <header className="flex gap-5 justify-between items-start px-0.5 w-full max-md:flex-wrap max-md:max-w-full pt-4" data-testid="navbar">
+      <div className="flex gap-5 mt-1.5 whitespace-nowrap max-md:flex-wrap max-md:max-w-full">
+        <h1 className="flex-auto text-3xl text-black">Plantify</h1>
+        <nav className="flex flex-auto ml-20 gap-10 justify-between self-start text-lg font-medium text-stone-900 text-opacity-50">
+          <a href="#">Home</a>
+          <a href="#">Products</a>
+          <a href="#">About</a>
+        </nav>
+      </div>
+      <div className="flex gap-5 justify-between">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/1e2f479a15be02d05dc0b55f501a147fb34b583f9ff035e94ef773eb2922f563?apiKey=8b5c844c9e604efba227618c0cf9b444&" alt="" className="shrink-0 self-start aspect-square w-[35px]" data-testid="shopping-cart-icon"/>
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/70e88fdb447737848c1163d274879c36c7deb93064ab54c71af5932cfb635418?apiKey=8b5c844c9e604efba227618c0cf9b444&" alt="" className="shrink-0 w-9 aspect-square" data-testid="profile"/>
+      </div>
+    </header>
   )
 }
 
