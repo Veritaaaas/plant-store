@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 
 function Navbar() {
   return (
@@ -5,9 +7,9 @@ function Navbar() {
       <div className="flex gap-5 mt-1.5 whitespace-nowrap">
         <h1 className="flex-auto text-2xl text-black">Plantify</h1>
         <nav className="flex flex-auto ml-20 gap-10 justify-between self-start text-lg font-medium text-stone-900 text-opacity-50">
-          <a href="#">Home</a>
-          <a href="#">Products</a>
-          <a href="#">About</a>
+          <Link to="/">Home</Link>
+          <Link to="/shop/natural">Products</Link>
+          <Link to="/About">About</Link>
         </nav>
       </div>
       <div className="flex gap-5 justify-between">
