@@ -3,20 +3,20 @@ import ProductCard from "./Product_card";
 function BestSellers() {
     const products = [
         {
+            name: "Aloe Vera",
+            price: 600.00,
             image: "https://cdn.builder.io/api/v1/image/assets/TEMP/341a7934fe7f05a0e371c9a3cfa6c894d31684bbb7ebbf89ae6a30729ca1dc8e?apiKey=8b5c844c9e604efba227618c0cf9b444&",
-            name:   "Aloe Vera",
-            price: "₱ 600.00",
-        },
-        {
-            image: "https://cdn.builder.io/api/v1/image/assets/TEMP/37bf10571abfcc4a0e130586dae6eba5b150e96026a646113059a8bef96b7e0c?apiKey=8b5c844c9e604efba227618c0cf9b444&",
-            name: "Artificial Plants",
-            price: "₱ 900.00",
-        },
-        {
-            image: "https://cdn.builder.io/api/v1/image/assets/TEMP/842b8cec20e5f04f3856520c20d6647e7e4b24431b54bf67aec2ea78889dd122?apiKey=8b5c844c9e604efba227618c0cf9b444&",
-            name: "Artificial Plants",
-            price: "₱ 3,500.00",
-        },
+          },
+          {
+            name: "Snake Plant",
+            price: 500.00,
+            image: "https://cdn.builder.io/api/v1/image/assets/TEMP/ade7df04c4f248816ce564916dcb69952284780bf7b0a06b45c0e8bee57a282d?apiKey=8b5c844c9e604efba227618c0cf9b444&",
+          },
+          {
+            name: "Peace Lily",
+            price: 400.0,
+            image: "https://cdn.builder.io/api/v1/image/assets/TEMP/2b7e6f53b693ce4afcfb5f762296eeefeb399ebf6eb8d12f1c766567ae4440d6?apiKey=8b5c844c9e604efba227618c0cf9b444&",
+          },
     ];
 
     return (
