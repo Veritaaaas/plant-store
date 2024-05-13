@@ -6,6 +6,8 @@ import Home from './components/Home';
 import Shop from './components/Shop';
 import Product_info from './components/Product_info';
 import Cart from './components/Cart';
+import About from './components/About';
+import Profile from './components/Profile';
 import './App.css';
 
 export const CartContext = createContext();
@@ -56,6 +58,8 @@ function App() {
           <Route path="/shop/:product_display" element={<Shop/>} />
           <Route path="/shop/:product_display/:product_name" element={<Product_info/>} />
           <Route path="/cart" element={<Cart/>} />
+          <Route path='/about' element={<About/>} /> 
+          <Route path='/profile' element={<Profile/>} />
         </Routes>
       </Router>
     </CartContext.Provider>
