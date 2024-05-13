@@ -3,8 +3,8 @@
 function Banner() {
     return (
     <section className="pt-3 pr-6 pl-12 mt-11 rounded-3xl bg-slate-300" data-testid="banner">
-      <div className="flex gap-5">
-        <div className="flex flex-col w-[44%]">
+      <div className="flex gap-5 max-md:flex-col">
+        <div className="flex flex-col w-[44%] max-md:w-full max-md:pb-8">
           <div className="flex flex-col mt-9 font-medium">
             <h2 className="text-6xl font-extrabold text-black leading-[64px]">
               Buy your dream plants
@@ -28,7 +28,7 @@ function Banner() {
             </form>
           </div>
         </div>
-        <div className="flex flex-col ml-5 w-[56%]">
+        <div className="flex flex-col ml-5 w-[56%] max-md:hidden">
           <div className="grow px-px max-md:mt-10">
             <div className="flex gap-5">
               <div className="flex flex-col w-[28%]l">

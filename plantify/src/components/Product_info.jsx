@@ -32,13 +32,13 @@ function Product_info () {
                 <Link to={`/shop/${product_display}`}>
                     <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ad8cd3cff42e8a5eaa4fd56cfb5178615067219510ad1ac5517fe39d0f843b39?apiKey=8b5c844c9e604efba227618c0cf9b444&" alt="" className="mt-9 w-6 aspect-square fill-black" />
                 </Link>
-                <main className="self-center mt-4 w-full max-w-[1213px]">
-                    <div className="flex gap-5">
-                        <div className="flex flex-col w-6/12">
-                            <img loading="lazy" src={image} alt="Aloe Vera plant" className="grow mt-4 h-[500px] w-[500px]" />
+                <main className="self-center mt-4 w-full">
+                    <div className="flex gap-5 max-md:flex-col">
+                        <div className="flex flex-col w-6/12 max-md:w-full">
+                            <img loading="lazy" src={image} alt="Aloe Vera plant" className="grow mt-4 aspect-square w-[500px] max-md:w-full" />
                         </div>
-                        <section className="flex flex-col ml-5 w-6/12">
-                            <div className="flex flex-col max-md:mt-10">
+                        <section className="flex flex-col ml-5 w-6/12 max-md:w-full">
+                            <div className="flex flex-col max-md:mt-10 max-md:w-full">
                                     <h2 className="text-5xl font-extrabold text-black">{name}</h2>
                                     <div className="mt-7 text-2xl font-medium text-stone-900 text-opacity-50">₱{price}</div>
                                     <div className="border-b-2 border-solid border-black"></div>
@@ -47,7 +47,7 @@ function Product_info () {
                                     </p>
                                     <div className="mt-12 text-2xl font-medium text-black">Quantity</div>
                                     <div className="flex gap-1 items-start self-start mt-5">
-                                    <input type="number" className="shrink-0 h-9 bg-white border border-black border-solid w-[60px] pb-4 pt-4 pl-1" aria-label="Quantity" />
+                                    <input type="number" className="shrink-0 h-9 bg-white border border-black border-solid w-[60px] pb-4 pt-4 pl-1" aria-label="Quantity" defaultValue={1} />
                                     </div>
                                     <button className="justify-center items-center px-16 py-2.5 mt-6 text-xl font-medium text-black bg-white rounded-3xl border-4 border-solid border-slate-300
                                     hover:bg-slate-300 hover:text-white hover:border-transparent transition duration-300 ease-in-out" 

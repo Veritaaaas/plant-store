@@ -21,8 +21,8 @@ function BestSellers() {
 
     return (
         <section className="mt-28">
-            <div className="flex gap-5">
-                <div className="flex flex-col w-3/12">
+            <div className="flex gap-5 max-md:flex-col">
+                <div className="flex flex-col w-3/12 max-md:w-full">
                 <div className="flex flex-col mt-1.5 text-lg font-medium text-stone-900">
                     <h2 className="text-3xl font-bold">Best Selling Plants</h2>
                     <p className="mt-3 text-stone-900 text-opacity-50">

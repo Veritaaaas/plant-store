@@ -29,7 +29,7 @@ function Cart() {
                 <h1 className="text-4xl font-bold text-black mt-10">Your Cart</h1>
             </div>
             <div className="flex justify-center mt-12">
-            <table className="text-stone-900 text-opacity-50 p-0 w-[60%]">
+            <table className="text-stone-900 text-opacity-50 p-0 w-[60%] max-md:w-full">
                 <thead className="p-0 text-start border-b-2 mb-8">
                     <tr className="text-left">
                         <th>Product</th>

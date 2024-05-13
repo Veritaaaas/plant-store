@@ -21,6 +21,11 @@ body {
 }
 
 .active {
+    font-weight: bold;
+    color: black;
+}
+
+.active_category {
     background-color: black;
     color: white;
   }
